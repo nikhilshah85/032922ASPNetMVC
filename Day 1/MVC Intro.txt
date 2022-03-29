@@ -1,0 +1,84 @@
+
+ASP.net MVC application 
+with Entity framework core
+	for CRUD Operations
+
+
+We work on ASP.net Core
+	Visual Studio (for RAD app) good for windows only
+	how to use VS Code (this is a free tool)
+
+Pre-req
+	OOPS
+	HTML, CSS and JS
+
+-----------------------------------------------------------------------------------------------------
+
+				MVC is a deisgn pattern for Web Content Development
+
+
+M - Model (.cs file) - This deals with the data operations
+	CRUD operation (insert, update, delete, sort,filter, calulate, validate) etc...
+	ADO.Net 
+	EF code 
+	Make some WebAPI calls (using C#) - server side secured call
+	Execute SP 
+	Transactions
+	In Memory collection data
+V - View (.cshtml file)  - UI 
+	HTML
+	CSS
+	Javascript / JQuery / Bootstrap / Angular material, JQuery UI
+      Razor Syntax (short hand HTML, CSS and JS combination)
+	Animations, pictures, videos etc...
+	Forms		
+	can also be an Angular or React UI (use the components from NG or react)
+	Make REST calls (using client side framework - eg. JQuery) for not so confendential data
+C - Controller (.cs file)
+	is responsible communication between model and view (collect data from one, pass data to other)
+	You place, encryption, decruption, Authentication, Authorization, session management, caching etc..
+
+-------------------------------------------------------------------------------------------------------------------------------
+	ASP.Net MVC Directory Structure
+
+	Model
+	View
+	Controller
+	WWWroot
+		all the static contents / files goes here
+	Program.cs (this is where you have the main function - entry point)
+		points to startup.cs
+
+	Startup.cs
+		here we configure
+			Middlewares
+	appsettings.json (config - in json format equal to web.config in asp.net)	
+			u can put environment variables, database connection string etc...
+
+-----------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
