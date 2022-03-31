@@ -1,0 +1,9 @@
+M
+
+V - Action view, the one we created on all the days
+    Partial View, we just created this
+    layout page, this is a master page, which will have common UI for all the pages which will derieve it
+
+	application may want to have multiple layout pages for various modules
+C
+

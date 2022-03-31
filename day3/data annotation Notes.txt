@@ -1,0 +1,17 @@
+1. Display of the column headers are not as per standards
+	Multiple places in the application (home, list, search, add, edit, update pages and reports)
+2. Data validaations will be needed for constraint in the table
+	on every page you use that colum for edit, search, add, calculation etc..
+		client side (javascript)
+		server side
+
+
+	Thus we have ComponentModel.dataannotation
+
+		This is done in the model
+--------------------------------------------------------------------------------------------------------
+in MVC - we need the same UI to be used in multiple views (calculator, login screen) - this screen needs a lot of scripts
+
+	Partial Views (a custom control, user control from previos version of asp.net)
+
+	
