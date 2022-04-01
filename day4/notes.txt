@@ -1,0 +1,32 @@
+
+
+
+1. MVC Application
+	Model - in memory collection (List)
+		EF - sql server database
+	view - ActionView
+		PartialView
+		Layout page
+	Controllers - 
+
+
+	Get the data from external source using views, make an Ajax for WebAPI call / REST API 
+
+		how to consume WebAPI data / REST api data
+
+	we will jQuery (u can do it from angular, react, javascript, node, php etc....)	
+		Jquery comes with a function ajax
+
+		pass a json object to ajax function, which has 5 properties 
+			ajax({
+				url:'https://jsonplaceholder.typicode.com/photos',
+				method:'GET',
+				contentType:'application/json',
+				success:function(result){
+					//code to display to displlay the data
+				},
+				error:function(errInfo)
+				{
+					//code to handle / display the error
+				}
+			})

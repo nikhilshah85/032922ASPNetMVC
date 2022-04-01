@@ -1,0 +1,68 @@
+﻿
+@{
+    ViewData["Title"] = "PostData";
+}
+
+<h1>PostData</h1>
+
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+
+<script type="text/javascript">
+    $(document).ready(function(){
+
+        $("#btnPostData").click(function(){
+            $.ajax({
+                url:'https://jsonplaceholder.typicode.com/posts',
+                method:'GET',
+                contentType:'application/json',
+                success:function(result){
+                    //alert('We got the data');
+                    //console.log(result);
+
+                    for(i=0;i<result.length;i++)
+                    {
+                        $("#tblPost").append("<tr>" + 
+                    "<td>" + result[i].userId + "</td>" +
+                    "<td>" + result[i].id + "</td>" +
+                    "<td>" + result[i].title + "</td>" +
+                    "<td>" + result[i].body + "</td> </tr>")
+                    }
+                },
+                error:function(err){
+                    alert('Error !!');
+                }
+            })
+        })
+
+        $("#btnPhotos").click(function(){
+            $.ajax({
+                url:'https://jsonplaceholder.typicode.com/photos',
+                method:'GET',
+                contentType:'application/json',
+                success:function(pics){
+                    for(i=0;i<pics.length;i++)
+                    {
+                        $("#tblPost").append("<tr>" +
+                            "<td>" + pics[i].id + "</td>" +
+                            "<td>" + pics[i].title + "</td>" +
+                            "<td><img src='" + pics[i].thumbnailUrl + "'/></td></tr>"        
+                        )
+                    }
+                },
+                error:function(err){
+                    alert(err);
+                }
+            })
+        })
+
+    })
+    
+</script>
+
+<button class="btn btn-primary" id="btnPostData">Get Post Data</button>
+<button class="btn btn-warning" id="btnPhotos">Show Photos</button>
+
+<table class="table table-borderless" id="tblPost">
+</table>
+
+

@@ -1,0 +1,21 @@
+﻿<div style="background-color:orangered">
+    <h3 style="text-align:center"> Simple Intrest calculator</h3>
+    <input type="number" placeholder="Enter Principal Amount" class="form-control" id="txt1" />
+    <input type="number" placeholder="Enter Rate Of Intrest " class="form-control" id="txt2" />
+    <input type="number" placeholder="Enter Duration In Years" class="form-control" id="txt3" />
+    <button class="btn btn-primary" onclick="calculateSimpleIntrest()"> Show Intrest </button>
+    <h1 id="intrestDisplay"> </h1>
+
+    <script type="text/javascript">
+    
+        function calculateSimpleIntrest()
+        {
+            var principal = document.getElementById("txt1").value;
+            var roi = document.getElementById("txt2").value;
+            var years = document.getElementById("txt3").value;
+
+            var intrest = (principal * (roi / 100)) * years;
+            document.getElementById("intrestDisplay").innerHTML = "Simple Intrest Is " + intrest;
+        }    
+    </script>        
+</div>

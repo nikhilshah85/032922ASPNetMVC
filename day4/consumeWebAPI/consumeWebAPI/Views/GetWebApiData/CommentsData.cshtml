@@ -1,0 +1,21 @@
+﻿
+@{
+    ViewData["Title"] = "CommentsData";
+}
+
+<h1>CommentsData</h1>
+
+
+<table>
+@foreach(var item in ViewBag.comments)
+{
+    <tr>
+        <td>@item.Postid</td>
+        <td>@item.Id</td>
+        <td>@item.Name</td>
+        <td>@item.Email</td>
+        <td>@item.Body</td>
+    </tr>
+
+}
+</table>
